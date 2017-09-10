@@ -7,6 +7,7 @@ import 'reveal.js/css/theme/black.css';
 import Intro from './sections/Intro';
 import About from './sections/About';
 import Definition from './sections/Definition';
+import WhyAreImportant from './sections/WhyAreImportant';
 
 class App extends Component {
 
@@ -23,6 +24,7 @@ class App extends Component {
         <Intro />
         <About />
         <Definition />
+        <WhyAreImportant />
       </div>
     );
   }

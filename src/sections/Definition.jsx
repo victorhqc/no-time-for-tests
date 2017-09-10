@@ -19,7 +19,7 @@ const SoftwareFundamentalsDefinition = () => (
 );
 
 const MyDefinition = () => (
-  <section key="definition-2">
+  <section>
     <h4>
       A set of functions designed to express the behavior of a specific piece of code.
     </h4>
