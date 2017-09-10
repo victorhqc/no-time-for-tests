@@ -7,14 +7,14 @@ import 'reveal.js/css/theme/black.css';
 
 import 'highlight.js/styles/atom-one-dark.css';
 
-import Intro from './sections/Intro';
-import About from './sections/About';
-import Definition from './sections/Definition';
-import WhyAreImportant from './sections/WhyAreImportant';
-import Libraries from './sections/Libraries';
-import SimpleTest from './sections/SimpleTest';
+import Intro from './slides/Intro';
+import About from './slides/About';
+import Definition from './slides/Definition';
+import WhyAreImportant from './slides/WhyAreImportant';
+import Libraries from './slides/Libraries';
+import SimpleTest from './slides/SimpleTest';
 
-class App extends Component {
+class Slides extends Component {
 
   componentDidMount() {
     reveal.initialize({
@@ -39,4 +39,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Slides;

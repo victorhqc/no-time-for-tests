@@ -1,8 +1,9 @@
+/* eslint react/jsx-filename-extension: 0 */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-import App from './App';
+import Slides from './Slides';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Slides />, document.getElementById('root'));
 registerServiceWorker();
