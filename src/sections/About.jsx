@@ -12,8 +12,8 @@ const timeSinceDeveloper = distanceInWordsStrict(new Date(), GRADUATION_DATE);
 const About = () => (
   <section>
     <img src={profilePicture} alt="Victor Quiroz Castro" />
-    <h2>Victor Quiroz Castro</h2>
-    <h3>Web developer for {timeSinceDeveloper}</h3>
+    <h3>Victor Quiroz Castro</h3>
+    <h4>Web developer for {timeSinceDeveloper}</h4>
   </section>
 );
 

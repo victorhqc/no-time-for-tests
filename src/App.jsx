@@ -6,6 +6,7 @@ import 'reveal.js/css/theme/black.css';
 
 import Intro from './sections/Intro';
 import About from './sections/About';
+import Definition from './sections/Definition';
 
 class App extends Component {
 
@@ -21,6 +22,7 @@ class App extends Component {
       <div className="slides">
         <Intro />
         <About />
+        <Definition />
       </div>
     );
   }
