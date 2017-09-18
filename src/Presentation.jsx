@@ -10,11 +10,12 @@ import 'highlight.js/styles/atom-one-dark.css';
 import Intro from './slides/Intro';
 import About from './slides/About';
 import Definition from './slides/Definition';
+import UnitTestsApproaches from './slides/UnitTestsApproaches';
 import WhyAreImportant from './slides/WhyAreImportant';
 import Libraries from './slides/Libraries';
 import SimpleTest from './slides/SimpleTest';
 
-class Slides extends Component {
+class Presentation extends Component {
 
   componentDidMount() {
     reveal.initialize({
@@ -34,9 +35,10 @@ class Slides extends Component {
         <WhyAreImportant />
         <Libraries />
         <SimpleTest />
+        <UnitTestsApproaches />
       </div>
     );
   }
 }
 
-export default Slides;
+export default Presentation;

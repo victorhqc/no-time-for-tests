@@ -2,8 +2,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Slides from './Slides';
+import RenderedComponent from './RenderedComponent';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Slides />, document.getElementById('root'));
+ReactDOM.render(<RenderedComponent />, document.getElementById('root'));
 registerServiceWorker();

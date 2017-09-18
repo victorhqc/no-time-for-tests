@@ -1,9 +1,11 @@
 import React from 'react';
 
-const simpleCode = `
-const calculateCircleArea = (radius) =>
+const simpleFunction = `
+const calculateCircleArea = radius =>
   Math.PI * Math.pow(radius, 2);
+`;
 
+const simpleTest = `
 describe('calculateCircleArea', () => {
   it('Should calculate a circle area', () => {
     const radius = 3;
@@ -25,7 +27,12 @@ const CodeExample = () => (
     <h4>A Simple Test</h4>
     <pre>
       <code className="javascript" data-trim data-noescape>
-        {simpleCode}
+        {simpleFunction}
+      </code>
+    </pre>
+    <pre>
+      <code className="javascript fragment" data-trim data-noescape>
+        {simpleTest}
       </code>
     </pre>
   </section>
