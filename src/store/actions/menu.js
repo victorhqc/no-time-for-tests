@@ -24,7 +24,7 @@ const requestFetchMenuFailed = error => ({
 export const fetchMenu = () => (dispatch) => {
   dispatch(requestFetchMenu());
 
-  axios.get('/v1/menu')
-  .then(response => requestFetchMenuSucceeded(response.data.items))
-  .catch(requestFetchMenuFailed);
+  return axios.get('/v1/menu')
+  .then(response => dispatch(requestFetchMenuSucceeded(response.data.items)))
+  .catch(e => dispatch(requestFetchMenuFailed(e)));
 };

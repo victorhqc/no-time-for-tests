@@ -15,6 +15,15 @@ yarn
 + npm >= 5.4
 + yarn >= 1.0.0
 
+For Mac OSX seems to be an error for running the tests.
+https://github.com/react-community/create-react-native-app/issues/273
+
+Needed to run `yarn test` in Mac OSX
+```sh
+brew install pkg-config
+brew install watchman
+```
+
 ## Slides
 
 Run the following in the terminal
