@@ -4,7 +4,7 @@ import {
   FINISH_PURCHASE,
 } from '../constants';
 
-const cart = (state, action) => {
+const cart = (state = {}, action) => {
   switch (action.type) {
     default:
       return state;

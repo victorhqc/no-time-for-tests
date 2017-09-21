@@ -24,7 +24,9 @@ const requestFetchMenuFailed = error => ({
 export const fetchMenu = () => (dispatch) => {
   dispatch(requestFetchMenu());
 
-  return axios.get('/v1/menu')
+  return axios.get('/v1/menu', {
+    baseURL: `//localhost${process.env.REACT_APP_SERVER_PORT ? `:${process.env.REACT_APP_SERVER_PORT}` : ''}`,
+  })
   .then(response => dispatch(requestFetchMenuSucceeded(response.data.items)))
   .catch(e => dispatch(requestFetchMenuFailed(e)));
 };
