@@ -4,5 +4,3 @@ export const FETCH_MENU_FAILED = 'FETCH_MENU_FAILED';
 
 export const ADD_CART_ITEM = 'ADD_CART_ITEM';
 export const REMOVE_CART_ITEM = 'REMOVE_CART_ITEM';
-
-export const FINISH_PURCHASE = 'FINISH_PURCHASE';
