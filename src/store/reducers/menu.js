@@ -1,7 +1,7 @@
 import {
-  ADD_CART_ITEM,
-  REMOVE_CART_ITEM,
-  FINISH_PURCHASE,
+  FETCH_MENU_REQUESTED,
+  FETCH_MENU_SUCCEEDED,
+  FETCH_MENU_FAILED,
 } from '../constants';
 
 const cart = (state, action) => {

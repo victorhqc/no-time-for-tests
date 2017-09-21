@@ -13,9 +13,11 @@ import {
   FINISH_PURCHASE,
 } from '../constants';
 
-import cart from './cart';
+import reducer from './cart';
 
-describe('cart', () => {
+describe('cart reducer', () => {
+  it('Should return default state');
+
   it('Should add an item to the cart');
 
   it('Should remove an item from the cart');
