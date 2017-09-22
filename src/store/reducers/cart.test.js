@@ -26,11 +26,13 @@ describe('cart reducer', () => {
       items: {
         1: {
           id: '1',
+          name: 'foo',
           price: 300,
           timesInCart: 1,
         },
         2: {
           id: '2',
+          name: 'bar',
           price: 200,
           timesInCart: 1,
         },
@@ -44,6 +46,7 @@ describe('cart reducer', () => {
         type: ADD_CART_ITEM,
         payload: {
           id: '1',
+          name: 'foo',
           price: 300,
         },
       },
@@ -53,11 +56,13 @@ describe('cart reducer', () => {
       items: {
         1: {
           id: '1',
+          name: 'foo',
           price: 300,
           timesInCart: 2,
         },
         2: {
           id: '2',
+          name: 'bar',
           price: 200,
           timesInCart: 1,
         },
@@ -73,6 +78,7 @@ describe('cart reducer', () => {
       items: {
         2: {
           id: '2',
+          name: 'bar',
           price: 200,
           timesInCart: 1,
         },
@@ -86,6 +92,7 @@ describe('cart reducer', () => {
         type: ADD_CART_ITEM,
         payload: {
           id: '1',
+          name: 'foo',
           price: 300,
         },
       },
@@ -95,11 +102,13 @@ describe('cart reducer', () => {
       items: {
         1: {
           id: '1',
+          name: 'foo',
           price: 300,
           timesInCart: 1,
         },
         2: {
           id: '2',
+          name: 'bar',
           price: 200,
           timesInCart: 1,
         },
@@ -115,11 +124,13 @@ describe('cart reducer', () => {
       items: {
         1: {
           id: '1',
+          name: 'foo',
           price: 300,
           timesInCart: 2,
         },
         2: {
           id: '2',
+          name: 'bar',
           price: 200,
           timesInCart: 1,
         },
@@ -141,6 +152,7 @@ describe('cart reducer', () => {
       items: {
         1: {
           id: '1',
+          name: 'foo',
           price: 300,
           timesInCart: 2,
         },
@@ -156,11 +168,13 @@ describe('cart reducer', () => {
       items: {
         1: {
           id: '1',
+          name: 'foo',
           price: 300,
           timesInCart: 2,
         },
         2: {
           id: '2',
+          name: 'bar',
           price: 200,
           timesInCart: 1,
         },
@@ -182,11 +196,13 @@ describe('cart reducer', () => {
       items: {
         1: {
           id: '1',
+          name: 'foo',
           price: 300,
           timesInCart: 1,
         },
         2: {
           id: '2',
+          name: 'bar',
           price: 200,
           timesInCart: 1,
         },

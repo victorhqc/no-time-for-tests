@@ -17,8 +17,7 @@ const defaultState = {
 const addItem = (state, action) => ({
   ...state,
   [action.id]: {
-    id: action.id,
-    price: action.price,
+    ...action,
     timesInCart: (state[action.id] || { timesInCart: 0 }).timesInCart + 1,
   },
 });
