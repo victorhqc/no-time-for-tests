@@ -1,7 +1,7 @@
 import compose from 'lodash/fp/compose';
 import curryRight from 'lodash/fp/curryRight';
 import curry from 'lodash/fp/curry';
-import reduce from 'lodash/reduce';
+import pickBy from 'lodash/pickBy';
 import find from 'lodash/find';
 
 import {
@@ -48,11 +48,15 @@ const removePrive = (state, item) => ({
   total: state.total - item.price,
 });
 
+const filterInvalidItems = state => pickBy(state, item => item);
+
 const removeItemAndRemovePrive = (state, item) => compose(
   // 3. Remove price from state
   curryRight(removePrive)(item),
   // 2. put item list back into state
   curry(addItems)(state),
+  // 3. Filter possible `undefined` items
+  filterInvalidItems,
   // 1. Update items
   curryRight(updateItems)(item),
 )(state.items);
