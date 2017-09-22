@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import partial from 'lodash/partial';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
@@ -6,6 +7,10 @@ import { connect } from 'react-redux';
 import {
   fetchMenu as fetchMenuAction,
 } from '../store/actions/menu';
+
+import {
+  addItem as addItemAction,
+} from '../store/actions/cart';
 
 import {
   formatPrice,
@@ -65,7 +70,17 @@ class Menu extends Component {
       fetchMenu,
     } = this.props;
 
+    this.handleOnClick = this.handleOnClick.bind(this);
+
     fetchMenu();
+  }
+
+  handleOnClick(item) {
+    const {
+      addItem,
+    } = this.props;
+
+    addItem(item);
   }
 
   render() {
@@ -83,7 +98,7 @@ class Menu extends Component {
                 <h4>{item.name}</h4>
                 <p>{item.description}</p>
                 <strong>{formatPrice(item.price)}</strong>
-                <Button>Add to cart</Button>
+                <Button onClick={partial(this.handleOnClick, item)}>Add to cart</Button>
               </ItemContent>
             </ItemCard>
           ))}
@@ -104,12 +119,14 @@ Menu.propTypes = {
   ),
 
   fetchMenu: PropTypes.func,
+  addItem: PropTypes.func,
 };
 
 Menu.defaultProps = {
   items: [],
 
   fetchMenu: () => {},
+  addItem: () => {},
 };
 
 const mapStateToProps = state => ({
@@ -118,6 +135,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = {
   fetchMenu: fetchMenuAction,
+  addItem: addItemAction,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Menu);
