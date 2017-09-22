@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart render items from cart 1`] = `
+<div>
+  <ul>
+    <li
+      key="1"
+    >
+      foo
+      : 
+      US$ 10.00 (1)
+      <button
+        onClick={[Function]}
+      >
+        x
+      </button>
+    </li>
+    <li
+      key="2"
+    >
+      bar
+      : 
+      US$ 15.00 (2)
+      <button
+        onClick={[Function]}
+      >
+        x
+      </button>
+    </li>
+  </ul>
+  <h3>
+    Total in Cart: 
+    NaN
+  </h3>
+</div>
+`;
+
+exports[`Cart render total amount in cart 1`] = `
+<div>
+  <ul>
+    <li
+      key="1"
+    >
+      foo
+      : 
+      US$ 100.00 (2)
+      <button
+        onClick={[Function]}
+      >
+        x
+      </button>
+    </li>
+  </ul>
+  <h3>
+    Total in Cart: 
+    US$ 200.00
+  </h3>
+</div>
+`;
+
+exports[`Cart renders 1`] = `
+<h3>
+  Your cart is empty
+</h3>
+`;

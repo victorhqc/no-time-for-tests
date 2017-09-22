@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import partial from 'lodash/partial';
 import map from 'lodash/map';
+import size from 'lodash/size';
 import { connect } from 'react-redux';
 
 import {
@@ -12,11 +13,11 @@ import {
   removeItem as removeItemAction,
 } from '../store/actions/cart';
 
-const Cart = ({
+export const Cart = ({
   cart,
   removeItem,
 }) => {
-  if (!cart.total || cart.total <= 0) {
+  if (!cart.items || size(cart.items) === 0) {
     return (
       <h3>Your cart is empty</h3>
     );
