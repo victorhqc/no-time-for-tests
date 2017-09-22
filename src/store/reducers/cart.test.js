@@ -21,7 +21,7 @@ describe('cart reducer', () => {
     });
   });
 
-  it('Should add an item to the cart', () => {
+  it('Should add an item to the cart (when item already existed)', () => {
     const initialState = {
       items: {
         1: {
@@ -63,6 +63,48 @@ describe('cart reducer', () => {
         },
       },
       total: 800,
+    };
+
+    expect(finalState).toEqual(expectedState);
+  });
+
+  it('Should add an item to the cart (when item did not exist previously)', () => {
+    const initialState = {
+      items: {
+        2: {
+          id: '2',
+          price: 200,
+          timesInCart: 1,
+        },
+      },
+      total: 200,
+    };
+    deepFreeze(initialState);
+
+    const finalState = [
+      {
+        type: ADD_CART_ITEM,
+        payload: {
+          id: '1',
+          price: 300,
+        },
+      },
+    ].reduce(reducer, initialState);
+
+    const expectedState = {
+      items: {
+        1: {
+          id: '1',
+          price: 300,
+          timesInCart: 1,
+        },
+        2: {
+          id: '2',
+          price: 200,
+          timesInCart: 1,
+        },
+      },
+      total: 500,
     };
 
     expect(finalState).toEqual(expectedState);

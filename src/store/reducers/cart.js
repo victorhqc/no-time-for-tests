@@ -14,36 +14,24 @@ const defaultState = {
   total: 0,
 };
 
-const addItem = (state, action) => reduce(state, (prev, item) => {
-  if (item.id !== action.id) {
-    return prev;
-  }
+const addItem = (state, action) => ({
+  ...state,
+  [action.id]: {
+    id: action.id,
+    price: action.price,
+    timesInCart: (state[action.id] || { timesInCart: 0 }).timesInCart + 1,
+  },
+});
 
-  return {
-    ...prev,
-    [action.id]: {
-      id: action.id,
-      price: action.price,
-      timesInCart: (prev[action.id] || { timesInCart: 0 }).timesInCart + 1,
-    },
-  };
-}, state);
-
-const updateItems = (state, action) => reduce(state, (prev, item) => {
-  if (item.id !== action.id) {
-    return prev;
-  }
-
-  return {
-    ...prev,
-    [action.id]: item.timesInCart === 1
-      ? undefined
-      : {
-        ...item,
-        timesInCart: item.timesInCart - 1,
-      },
-  };
-}, state);
+const updateItems = (state, action) => ({
+  ...state,
+  [action.id]: state[action.id].timesInCart === 1
+  ? undefined
+  : {
+    ...state[action.id],
+    timesInCart: state[action.id].timesInCart - 1,
+  },
+});
 
 const addItems = (state, items) => ({
   ...state,
