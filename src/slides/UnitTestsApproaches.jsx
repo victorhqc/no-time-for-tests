@@ -4,9 +4,9 @@ const UnitTestsApproaches = () => (
   <section>
     <h4>Approach to write them</h4>
     <ul>
-      <li className="fragment">Code first</li>
+      <li className="fragment">Tests first</li>
       <li className="fragment">
-        Tests first{' '}
+        Code first{' '}
         <i className="fragment">
           (Reverse engineering)
         </i>

@@ -26,10 +26,24 @@ const MyDefinition = () => (
   </section>
 );
 
+const MyDefinitionBefore = () => (
+  <section>
+    <h4>2 = 2</h4>
+  </section>
+);
+
+const Duh = () => (
+  <section data-background="https://media.giphy.com/media/aVtdz7iNVPI1W/giphy.gif">
+    obviously
+  </section>
+);
+
 const Definition = () => (
   <section>
     <SoftwareFundamentalsDefinition />
     <MyDefinition />
+    <MyDefinitionBefore />
+    <Duh />
   </section>
 );
 

@@ -5,7 +5,7 @@ const Disadvantages = () => (
     <h4>Disadvantages</h4>
     <ul>
       <li>Could lead to false positives</li>
-      <li></li>
+      <li>There is no silver bullet, still depends on developer to write good tests</li>
     </ul>
   </section>
 );

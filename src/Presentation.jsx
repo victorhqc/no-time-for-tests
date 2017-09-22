@@ -14,6 +14,12 @@ import UnitTestsApproaches from './slides/UnitTestsApproaches';
 import WhyAreImportant from './slides/WhyAreImportant';
 import Libraries from './slides/Libraries';
 import SimpleTest from './slides/SimpleTest';
+import Recommendations from './slides/Recommendations';
+import TestsFirst from './slides/TestsFirst';
+import CodeFirst from './slides/CodeFirst';
+import PracticalExample from './slides/PracticalExample';
+import Disadvantages from './slides/Disadvantages';
+import ThankYou from './slides/ThankYou';
 
 class Presentation extends Component {
 
@@ -36,6 +42,12 @@ class Presentation extends Component {
         <Libraries />
         <SimpleTest />
         <UnitTestsApproaches />
+        <TestsFirst />
+        <CodeFirst />
+        <PracticalExample />
+        <Disadvantages />
+        <Recommendations />
+        <ThankYou />
       </div>
     );
   }
