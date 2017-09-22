@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 
 import configureStore from '../store';
 
-import Cart from './Cart';
+import CartComponent from './Cart';
 import Menu from './Menu';
 
 import './style.css';
@@ -13,7 +13,7 @@ const store = configureStore();
 const App = () => (
   <Provider store={store}>
     <div>
-      <Cart />
+      <CartComponent />
       <Menu />
     </div>
   </Provider>
