@@ -13,7 +13,8 @@ const About = () => (
   <section>
     <img src={profilePicture} alt="Victor Quiroz Castro" />
     <h3>Victor Quiroz Castro</h3>
-    <h4>Web developer for {timeSinceDeveloper}</h4>
+    <p>Frontend Engineer @hellofresh.</p>
+    <p>Web developer for {timeSinceDeveloper}</p>
   </section>
 );
 
