@@ -12,6 +12,7 @@ import About from './slides/About';
 import Definition from './slides/Definition';
 import UnitTestsApproaches from './slides/UnitTestsApproaches';
 import WhyAreImportant from './slides/WhyAreImportant';
+import TestPyramid from './slides/TestPyramid';
 import WhereDoIStart from './slides/WhereDoIStart';
 import Libraries from './slides/Libraries';
 import SimpleTest from './slides/SimpleTest';
@@ -40,6 +41,7 @@ class Presentation extends Component {
         <About />
         <Definition />
         <WhyAreImportant />
+        <TestPyramid />
         <WhereDoIStart />
         <Libraries />
         <SimpleTest />
