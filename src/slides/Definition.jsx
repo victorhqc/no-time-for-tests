@@ -28,13 +28,16 @@ const MyDefinition = () => (
 
 const MyDefinitionBefore = () => (
   <section>
-    <h4>2 = 2</h4>
+    <h4>2 + 2 = 4</h4>
   </section>
 );
 
 const Duh = () => (
-  <section data-background="https://media.giphy.com/media/aVtdz7iNVPI1W/giphy.gif">
-    obviously
+  <section>
+    <img
+      src="https://media.giphy.com/media/aVtdz7iNVPI1W/giphy.gif"
+      alt="girl saying 'duh'"
+    />
   </section>
 );
 
