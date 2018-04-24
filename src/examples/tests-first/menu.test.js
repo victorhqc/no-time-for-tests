@@ -7,7 +7,7 @@ import {
 } from '../../store/constants';
 
 // import reducer from '../../store/reducers/menu';
-
+import reducer from './menu.reducer';
 /*
 Write a Reducer to handle receiving menu items. It must handle the following logic:
 1. Wait for the items
