@@ -11,9 +11,10 @@ const NiceThingsAboutTesting = () => (
     <p>Ok, so why all the fuss about them?</p>
     <ul>
       <li className="fragment">Can help a lot for debugging.</li>
-      <li className="fragment">Easier to design code.</li>
+      <li className="fragment">Help designing code.</li>
       <li className="fragment">Help to detect flaws or errors.</li>
       <li className="fragment">Best documentation ever.</li>
+      <li className="fragment">Refactors are trivial.</li>
     </ul>
   </section>
 );
