@@ -7,21 +7,21 @@ import 'reveal.js/css/theme/black.css';
 
 import 'highlight.js/styles/atom-one-dark.css';
 
-import Intro from './slides/Intro';
-import About from './slides/About';
-import Definition from './slides/Definition';
-import UnitTestsApproaches from './slides/UnitTestsApproaches';
-import WhyAreImportant from './slides/WhyAreImportant';
-import TestPyramid from './slides/TestPyramid';
-import WhereDoIStart from './slides/WhereDoIStart';
-import Libraries from './slides/Libraries';
-import SimpleTest from './slides/SimpleTest';
-import Recommendations from './slides/Recommendations';
-import TestsFirst from './slides/TestsFirst';
-import CodeFirst from './slides/CodeFirst';
-import PracticalExample from './slides/PracticalExample';
-import Disadvantages from './slides/Disadvantages';
-import ThankYou from './slides/ThankYou';
+import Intro from './_slides/Intro';
+import About from './_slides/About';
+import Definition from './_slides/Definition';
+import UnitTestsApproaches from './_slides/UnitTestsApproaches';
+import WhyAreImportant from './_slides/WhyAreImportant';
+import TestPyramid from './_slides/TestPyramid';
+import WhereDoIStart from './_slides/WhereDoIStart';
+import Libraries from './_slides/Libraries';
+import SimpleTest from './_slides/SimpleTest';
+import Recommendations from './_slides/Recommendations';
+import TestsFirst from './_slides/TestsFirst';
+import CodeFirst from './_slides/CodeFirst';
+import PracticalExample from './_slides/PracticalExample';
+import Disadvantages from './_slides/Disadvantages';
+import ThankYou from './_slides/ThankYou';
 
 class Presentation extends Component {
 
