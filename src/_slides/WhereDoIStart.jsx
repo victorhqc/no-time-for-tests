@@ -1,8 +1,20 @@
 import React from 'react';
 
-const Interesting = () => (
-  <section data-background="http://media.giphy.com/media/y3QOvy7xxMwKI/giphy.gif">
-    Interesting...
+const testCode = `
+  function add(number1, number2) {
+    return number1 + number2;
+  }
+`;
+
+const TestsWhenNewPeopleCome = () => (
+  <section>
+    <p>2 + 2 = 4</p>
+    <pre className="fragment">
+      <code className="javascript" data-trim data-noescape>
+        {testCode}
+      </code>
+    </pre>
+    <p className="fragment" style={{ color: 'crimson' }}>2 + 3 = 4 !</p>
   </section>
 );
 
@@ -24,7 +36,7 @@ const NiceThingsAboutTesting = () => (
 const WhyAreImportant = () => (
   <section>
     <NiceThingsAboutTesting />
-    {/* <Interesting /> */}
+    <TestsWhenNewPeopleCome />
   </section>
 );
 

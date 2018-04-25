@@ -30,8 +30,10 @@ const CodeExample = () => (
         {simpleFunction}
       </code>
     </pre>
-    <pre>
-      <code className="javascript fragment" data-trim data-noescape>
+    <p className="fragment">2 + 2 = 4</p>
+    <p className="fragment">π * 3^2 = 28.2743</p>
+    <pre className="fragment">
+      <code className="javascript" data-trim data-noescape>
         {simpleTest}
       </code>
     </pre>

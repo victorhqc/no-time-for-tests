@@ -10,7 +10,7 @@ const NiceThingsAboutTesting = () => (
   <section>
     <p>Ok, so why all the fuss about them?</p>
     <ul>
-      <li className="fragment">Can help a lot for debugging.</li>
+      <li className="fragment">Help debugging.</li>
       <li className="fragment">Help designing code.</li>
       <li className="fragment">Help to detect flaws or errors.</li>
       <li className="fragment">Best documentation ever.</li>

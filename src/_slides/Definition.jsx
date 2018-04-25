@@ -26,7 +26,7 @@ const MyDefinition = () => (
   </section>
 );
 
-const MyDefinitionBefore = () => (
+const TestsSoundDumb = () => (
   <section>
     <h4>2 + 2 = 4</h4>
   </section>
@@ -45,7 +45,7 @@ const Definition = () => (
   <section>
     <SoftwareFundamentalsDefinition />
     <MyDefinition />
-    <MyDefinitionBefore />
+    <TestsSoundDumb />
     <Duh />
   </section>
 );
