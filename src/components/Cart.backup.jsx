@@ -13,8 +13,30 @@ import {
   removeItem as removeItemAction,
 } from '../store/actions/cart';
 
-export const Cart = ({}) => {
-  return null;
+export const Cart = ({
+  cart,
+  removeItem,
+}) => {
+  if (!cart.items || size(cart.items) === 0) {
+    return (
+      <h3>Your cart is empty</h3>
+    );
+  }
+
+  return (
+    <div>
+      <ul>
+        {map(cart.items, item => (
+          <li key={item.id}>
+            {item.name}{': '}
+            {`${formatPrice(item.price)} (${item.timesInCart})`}
+            <button onClick={partial(removeItem, item)}>x</button>
+          </li>
+        ))}
+      </ul>
+      <h3>Total in Cart: {formatPrice(cart.total)}</h3>
+    </div>
+  );
 };
 
 Cart.defaultProps = {
@@ -26,7 +48,6 @@ Cart.defaultProps = {
 Cart.propTypes = {
   cart: PropTypes.shape({
     total: PropTypes.number,
-    items: PropTypes.shape({}),
   }),
 
   removeItem: PropTypes.func,
